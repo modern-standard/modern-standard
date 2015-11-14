@@ -40,10 +40,10 @@ npm install standard-babel-lint
 
 [arrow-parens]: http://eslint.org/docs/rules/arrow-parens.html
 [comma-dangle]: http://eslint.org/docs/rules/comma-dangle.html
+[object-shorthand]: http://eslint.org/docs/rules/object-shorthand.html
 [prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback.html
 [prefer-spread]: http://eslint.org/docs/rules/prefer-spread.html
 [prefer-template]: http://eslint.org/docs/rules/prefer-template.html
-
 
 ## Methodology Differences from Standard
 

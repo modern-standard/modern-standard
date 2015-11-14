@@ -27,6 +27,7 @@
   "rules": {
     "arrow-parens":  [2, "always"],
     "comma-dangle": [2, "always-multiline"],
+    "object-shorthand": 2,
     "prefer-arrow-callback": 2,
     "prefer-spread": 2,
     "prefer-template": 2,
