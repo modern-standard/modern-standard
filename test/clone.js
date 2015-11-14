@@ -33,7 +33,7 @@ var PARALLEL_LIMIT = Math.min(os.cpus().length * 1.5)
 test('Disabled Packages', (t) => {
   t.plan(disabledPackages.length)
   disabledPackages.forEach((pkg) => {
-    t.pass('DISABLED: ' + pkg.name + ': ' + pkg.disable + ' (' + pkg.repo + ')')
+    t.pass(`DISABLED: ${pkg.name}: ${pkg.disable} (${pkg.repo})`)
   })
 })
 
@@ -47,7 +47,7 @@ test('test github repos that use `standard`', (t) => {
 
   parallelLimit(testPackages.map((pkg) => {
     var name = pkg.name
-    var url = pkg.repo + '.git'
+    var url = `${pkg.repo}.git`
     var folder = path.join(TMP, name)
     return (cb) => {
       fsAccess(path.join(TMP, name), fs.R_OK | fs.W_OK, (err) => {
@@ -60,12 +60,12 @@ test('test github repos that use `standard`', (t) => {
           : extend(gitOpts, { cwd: folder })
         spawn(GIT, gitArgs, gitOpts, (err) => {
           if (err) {
-            err.message += ' (' + name + ')'
+            err.message += ` (${name})`
             return cb(err)
           }
 
           spawn(STANDARD, [ '--verbose' ], { cwd: folder }, (err) => {
-            t.error(err, name + ' (' + pkg.repo + ')')
+            t.error(err, `${name}  ( ${pkg.repo})`)
             cb(null)
           })
         })
@@ -80,7 +80,7 @@ function spawn (command, args, opts, cb) {
   var child = winSpawn(command, args, extend({ stdio: 'inherit' }, opts))
   child.on('error', cb)
   child.on('close', (code) => {
-    if (code !== 0) cb(new Error('non-zero exit code: ' + code))
+    if (code !== 0) cb(new Error(`non-zero exit code: ${code}`))
     else cb(null)
   })
   return child

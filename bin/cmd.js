@@ -56,7 +56,7 @@ function Cli (opts) {
     var fmtMsg = ''
     if (opts.formatter) {
       fmtMsg = '-F, --format    Automatically format code.'
-      if (opts.formatterName) fmtMsg += ' (using ' + opts.formatterName + ')'
+      if (opts.formatterName) fmtMsg += ` (using ${opts.formatterName})`
     }
     if (opts.tagline) console.log('%s - %s (%s)', opts.cmd, opts.tagline, opts.homepage)
     console.log(multiline.stripIndent(() => {
@@ -115,7 +115,7 @@ function Cli (opts) {
     if (result.errorCount === 0) process.exit(0)
 
     console.log(
-      opts.cmd + ': Use %s (%s) ',
+      `${opts.cmd}: Use %s (%s) `,
       opts.tagline,
       opts.homepage
     )
@@ -125,7 +125,7 @@ function Cli (opts) {
         log(
           '  %s:%d:%d: %s%s',
           result.filePath, message.line || 0, message.column || 0, message.message,
-          argv.verbose ? ' (' + message.ruleId + ')' : ''
+          argv.verbose ? ` (${message.ruleId})` : ''
         )
       })
     })
@@ -134,7 +134,7 @@ function Cli (opts) {
   }
 
   function onError (err) {
-    console.error(opts.cmd + ': Unexpected linter output:\n')
+    console.error(`${opts.cmd}: Unexpected linter output:\n`)
     console.error(err.stack || err.message || err)
     console.error(
       '\nIf you think this is a bug in `%s`, open an issue: %s',
@@ -150,7 +150,7 @@ function Cli (opts) {
    */
   function log () {
     if (argv.stdin && argv.format) {
-      arguments[0] = opts.cmd + ': ' + arguments[0]
+      arguments[0] = `${opts.cmd}: ${arguments[0]}`
       console.error.apply(console, arguments)
     } else {
       console.log.apply(console, arguments)

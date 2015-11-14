@@ -35,10 +35,12 @@ npm install standard-babel-lint
 * Always require parent for arrow functions, [arrow-parens]: always.
 * Require commas in a multi-line block, [comma-dangle]: "always-multiline".
 * Arrow functions everywhere, [prefer-arrow-callback].
+* Template strings, [prefer-template]
 
 [arrow-parens]: http://eslint.org/docs/rules/arrow-parens.html
-[prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback.html
 [comma-dangle]: http://eslint.org/docs/rules/comma-dangle.html
+[prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback.html
+[prefer-template]: http://eslint.org/docs/rules/prefer-template.html
 
 
 ## Methodology Differences from Standard
