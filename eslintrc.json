@@ -26,6 +26,7 @@
     "arrow-parens":  [2, "always"],
     "comma-dangle": [2, "always-multiline"],
     "prefer-arrow-callback": 2,
+    "prefer-spread": 2,
     "prefer-template": 2,
 
     "accessor-pairs": 2,

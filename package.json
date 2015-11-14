@@ -1,7 +1,7 @@
 {
   "name": "standard-babel-lint",
   "description": "JavaScript Babel Standard Style",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "email": "kevingrandon@yahoo.com",
     "name": "Kevin Grandon"
