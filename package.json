@@ -1,7 +1,7 @@
 {
   "name": "standard-babel-lint",
   "description": "JavaScript Babel Standard Style",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "email": "kevingrandon@yahoo.com",
     "name": "Kevin Grandon"
@@ -13,6 +13,7 @@
     "url": "https://github.com/standard-babel-lint/standard-babel-lint/issues"
   },
   "dependencies": {
+    "babel-eslint": "^4.1.5",
     "defaults": "^1.0.3",
     "deglob": "^1.0.1",
     "eslint": "^1.9.0",

@@ -1,4 +1,6 @@
 {
+  "parser": "babel-eslint",
+
   "ecmaFeatures": {
     "modules": true,
     "experimentalObjectRestSpread": true,
