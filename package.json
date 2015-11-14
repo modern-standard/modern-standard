@@ -63,7 +63,6 @@
     "url": "git://github.com/standard-babel-lint/standard-babel-lint.git"
   },
   "scripts": {
-    "test": "node ./bin/cmd.js && tape test/*.js",
-    "test-quick": "node ./bin/cmd.js"
+    "test": "node ./bin/cmd.js"
   }
 }
