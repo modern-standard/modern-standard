@@ -29,3 +29,7 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 ```bash
 npm install standard-babel-lint
 ```
+
+## Rule Differences from Standard
+
+* Always require parent for arrow functions.
