@@ -1,17 +1,16 @@
 {
-  "name": "standard",
-  "description": "JavaScript Standard Style",
+  "name": "standard-babel-lint",
+  "description": "JavaScript Babel Standard Style",
   "version": "5.3.1",
   "author": {
-    "email": "feross@feross.org",
-    "name": "Feross Aboukhadijeh",
-    "url": "http://feross.org/"
+    "email": "kevingrandon@yahoo.com",
+    "name": "Kevin Grandon"
   },
   "bin": {
-    "standard": "./bin/cmd.js"
+    "standard-babel-lint": "./bin/cmd.js"
   },
   "bugs": {
-    "url": "https://github.com/feross/standard/issues"
+    "url": "https://github.com/standard-babel-lint/standard-babel-lint/issues"
   },
   "dependencies": {
     "eslint-config-standard": "4.4.0",
@@ -29,9 +28,9 @@
     "win-spawn": "^2.0.0",
     "xtend": "^4.0.0"
   },
-  "homepage": "https://github.com/feross/standard",
+  "homepage": "https://github.com/standard-babel-lint/standard-babel-lint",
   "keywords": [
-    "JavaScript Standard Style",
+    "JavaScript Babel Standard Style",
     "check",
     "checker",
     "code",
@@ -50,6 +49,7 @@
     "simple",
     "standard",
     "standard style",
+    "standard babel lint",
     "style",
     "style checker",
     "style linter",
@@ -59,7 +59,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feross/standard.git"
+    "url": "git://github.com/standard-babel-lint/standard-babel-lint.git"
   },
   "scripts": {
     "test": "node ./bin/cmd.js && tape test/*.js",
