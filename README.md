@@ -33,3 +33,4 @@ npm install standard-babel-lint
 ## Rule Differences from Standard
 
 * Always require parent for arrow functions.
+* Comma-dangle is set to "always".
