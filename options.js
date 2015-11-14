@@ -8,6 +8,6 @@ module.exports = {
   bugs: pkg.bugs.url,
   tagline: 'JavaScript Standard Style',
   eslintConfig: {
-    configFile: path.join(__dirname, 'rc', '.eslintrc')
-  }
+    configFile: path.join(__dirname, 'rc', '.eslintrc'),
+  },
 }

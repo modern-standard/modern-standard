@@ -10,7 +10,7 @@ var pkgConfig = require('pkg-config')
 
 var DEFAULT_PATTERNS = [
   '**/*.js',
-  '**/*.jsx'
+  '**/*.jsx',
 ]
 
 var DEFAULT_IGNORE = [
@@ -18,7 +18,7 @@ var DEFAULT_IGNORE = [
   '**/bundle.js',
   'coverage/**',
   'node_modules/**',
-  'vendor/**'
+  'vendor/**',
 ]
 
 function Linter (opts) {
@@ -28,7 +28,7 @@ function Linter (opts) {
   self.cmd = opts.cmd || 'standard'
   self.eslintConfig = defaults(opts.eslintConfig, {
     useEslintrc: false,
-    globals: []
+    globals: [],
   })
   if (!self.eslintConfig) {
     throw new Error('No eslintConfig passed.')
@@ -90,7 +90,7 @@ Linter.prototype.lintFiles = function (files, opts, cb) {
     cwd: opts.cwd,
     useGitIgnore: true,
     usePackageJson: true,
-    configKey: self.cmd
+    configKey: self.cmd,
   }
 
   deglob(files, deglobOpts, function (err, allFiles) {

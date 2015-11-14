@@ -14,7 +14,7 @@ function Cli (opts) {
   opts = defaults(opts, {
     cmd: 'standard-engine',
     tagline: 'JavaScript Custom Style',
-    version: require('../package.json').version
+    version: require('../package.json').version,
   })
 
   var argv = minimist(process.argv.slice(2), {
@@ -22,19 +22,19 @@ function Cli (opts) {
       format: 'F',
       global: 'globals',
       help: 'h',
-      verbose: 'v'
+      verbose: 'v',
     },
     boolean: [
       'format',
       'help',
       'stdin',
       'verbose',
-      'version'
+      'version',
     ],
     string: [
       'global',
-      'parser'
-    ]
+      'parser',
+    ],
   })
 
   if (argv.format) {
@@ -87,7 +87,7 @@ function Cli (opts) {
 
   var lintOpts = {
     parser: argv.parser,
-    global: argv.global
+    global: argv.global,
   }
 
   if (argv.stdin) {
