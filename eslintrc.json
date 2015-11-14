@@ -23,12 +23,15 @@
   },
 
   "rules": {
-    "accessor-pairs": 2,
     "arrow-parens":  [2, "always"],
+    "comma-dangle": [2, "always-multiline"],
+    "prefer-arrow-callback": 2,
+    "prefer-template": 2,
+
+    "accessor-pairs": 2,
     "arrow-spacing": [2, { "before": true, "after": true }],
     "block-spacing": [2, "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
-    "comma-dangle": [2, "always-multiline"],
     "comma-spacing": [2, { "before": false, "after": true }],
     "comma-style": [2, "last"],
     "constructor-super": 2,
@@ -110,8 +113,6 @@
     "one-var": [2, { "initialized": "never" }],
     "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
     "padded-blocks": [2, "never"],
-    "prefer-arrow-callback": 2,
-    "prefer-template": 2,
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
     "semi": [2, "never"],
