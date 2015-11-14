@@ -20,7 +20,7 @@ This module saves you (and others!) time in two ways:
 - **Catch style errors before they're submitted in PRs.** Saves precious code review time
   by eliminating back-and-forth between maintainer and contributor.
 
-This is a linter for the future, based on the [standard linter]. It expects to be run within 
+This is a linter for the future, based on the [standard linter]. It expects to be run within a babel environment, using the latest available babel syntax.
 
 [standard linter]: https://github.com/feross/standard
 
