@@ -34,3 +34,11 @@ npm install standard-babel-lint
 
 * Always require parent for arrow functions.
 * Comma-dangle is set to "always-multiline".
+
+
+## Methodology Differences from Standard
+
+* We will freely update rules based on current best practices. Becuase of this we recommend that you lock down the current version of standard-babel-lint.
+* We are currently only targeting the latest javascript syntax, generally this code is transpiled by [babel].
+
+[babel]: http://babeljs.io/
