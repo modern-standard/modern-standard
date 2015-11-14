@@ -93,7 +93,7 @@ Linter.prototype.lintFiles = function (files, opts, cb) {
     configKey: self.cmd,
   }
 
-  deglob(files, deglobOpts, function (err, allFiles) {
+  deglob(files, deglobOpts, (err, allFiles) => {
     if (err) return cb(err)
     // undocumented – do not use (used by bin/cmd.js)
     if (opts._onFiles) opts._onFiles(allFiles)

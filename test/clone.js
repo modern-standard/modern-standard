@@ -19,7 +19,7 @@ var testPackages = require('standard-packages/test')
 var winSpawn = require('win-spawn')
 
 var disabledPackages = []
-testPackages = testPackages.filter(function (pkg) {
+testPackages = testPackages.filter((pkg) => {
   if (pkg.disable) disabledPackages.push(pkg)
   return !pkg.disable
 })
@@ -30,14 +30,14 @@ var TMP = path.join(__dirname, '..', 'tmp')
 
 var PARALLEL_LIMIT = Math.min(os.cpus().length * 1.5)
 
-test('Disabled Packages', function (t) {
+test('Disabled Packages', (t) => {
   t.plan(disabledPackages.length)
-  disabledPackages.forEach(function (pkg) {
+  disabledPackages.forEach((pkg) => {
     t.pass('DISABLED: ' + pkg.name + ': ' + pkg.disable + ' (' + pkg.repo + ')')
   })
 })
 
-test('test github repos that use `standard`', function (t) {
+test('test github repos that use `standard`', (t) => {
   t.plan(testPackages.length)
 
   mkdirp.sync(TMP)
@@ -45,12 +45,12 @@ test('test github repos that use `standard`', function (t) {
   // test an empty repo
   mkdirp.sync(path.join(TMP, 'empty'))
 
-  parallelLimit(testPackages.map(function (pkg) {
+  parallelLimit(testPackages.map((pkg) => {
     var name = pkg.name
     var url = pkg.repo + '.git'
     var folder = path.join(TMP, name)
-    return function (cb) {
-      fsAccess(path.join(TMP, name), fs.R_OK | fs.W_OK, function (err) {
+    return (cb) => {
+      fsAccess(path.join(TMP, name), fs.R_OK | fs.W_OK, (err) => {
         var gitArgs = err
           ? [ 'clone', '--depth', 1, url, path.join(TMP, name) ]
           : [ 'pull' ]
@@ -58,20 +58,20 @@ test('test github repos that use `standard`', function (t) {
         gitOpts = err
           ? gitOpts
           : extend(gitOpts, { cwd: folder })
-        spawn(GIT, gitArgs, gitOpts, function (err) {
+        spawn(GIT, gitArgs, gitOpts, (err) => {
           if (err) {
             err.message += ' (' + name + ')'
             return cb(err)
           }
 
-          spawn(STANDARD, [ '--verbose' ], { cwd: folder }, function (err) {
+          spawn(STANDARD, [ '--verbose' ], { cwd: folder }, (err) => {
             t.error(err, name + ' (' + pkg.repo + ')')
             cb(null)
           })
         })
       })
     }
-  }), PARALLEL_LIMIT, function (err) {
+  }), PARALLEL_LIMIT, (err) => {
     if (err) throw err
   })
 })
@@ -79,7 +79,7 @@ test('test github repos that use `standard`', function (t) {
 function spawn (command, args, opts, cb) {
   var child = winSpawn(command, args, extend({ stdio: 'inherit' }, opts))
   child.on('error', cb)
-  child.on('close', function (code) {
+  child.on('close', (code) => {
     if (code !== 0) cb(new Error('non-zero exit code: ' + code))
     else cb(null)
   })

@@ -59,7 +59,7 @@ function Cli (opts) {
       if (opts.formatterName) fmtMsg += ' (using ' + opts.formatterName + ')'
     }
     if (opts.tagline) console.log('%s - %s (%s)', opts.cmd, opts.tagline, opts.homepage)
-    console.log(multiline.stripIndent(function () {
+    console.log(multiline.stripIndent(() => {
       /*
         Usage:
             %s <flags> [FILES...]
@@ -91,7 +91,7 @@ function Cli (opts) {
   }
 
   if (argv.stdin) {
-    stdin(function (text) {
+    stdin((text) => {
       if (argv.format) {
         text = opts.formatter.transform(text)
         process.stdout.write(text)
@@ -101,7 +101,7 @@ function Cli (opts) {
   } else {
     if (argv.format) {
       lintOpts._onFiles = function (files) {
-        files.forEach(function (file) {
+        files.forEach((file) => {
           var data = fs.readFileSync(file).toString()
           fs.writeFileSync(file, opts.formatter.transform(data))
         })
@@ -120,8 +120,8 @@ function Cli (opts) {
       opts.homepage
     )
 
-    result.results.forEach(function (result) {
-      result.messages.forEach(function (message) {
+    result.results.forEach((result) => {
+      result.messages.forEach((message) => {
         log(
           '  %s:%d:%d: %s%s',
           result.filePath, message.line || 0, message.column || 0, message.message,
