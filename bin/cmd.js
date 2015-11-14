@@ -151,9 +151,9 @@ function Cli (opts) {
   function log () {
     if (argv.stdin && argv.format) {
       arguments[0] = `${opts.cmd}: ${arguments[0]}`
-      console.error.apply(console, arguments)
+      console.error(...arguments)
     } else {
-      console.log.apply(console, arguments)
+      console.log(...arguments)
     }
   }
 }
