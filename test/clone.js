@@ -15,7 +15,7 @@ var os = require('os')
 var parallelLimit = require('run-parallel-limit')
 var path = require('path')
 var test = require('tape')
-var testPackages = require('standard-packages/test')
+var testPackages = require('standard-babel-lint-packages/test')
 var winSpawn = require('win-spawn')
 
 var disabledPackages = []

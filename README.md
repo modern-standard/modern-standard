@@ -49,5 +49,8 @@ npm install standard-babel-lint
 
 * We will freely update rules based on current best practices. Becuase of this we recommend that you lock down the current version of standard-babel-lint.
 * We are currently only targeting the latest javascript syntax, generally this code is transpiled by [babel].
+* We want to move faster and be more receptive to community issues and contributions.
+* Everything is under one organization, and all linting code is in a single repo. This makes it much easier for contributors.
+* This is an experiment and we're happy if standard adopts these rules or if this repository is forked.
 
 [babel]: http://babeljs.io/
