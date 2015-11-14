@@ -1,5 +1,5 @@
 // programmatic usage
-var Linter = require('standard-engine').linter
+var Linter = require('./linter').linter
 
 var opts = require('./options.js')
 
