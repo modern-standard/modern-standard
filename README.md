@@ -26,7 +26,7 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 
 ## Rule Differences from Standard
 
-* Always require parent for arrow functions, [arrow-parens]: always.
+* Always require parens for arrow functions, [arrow-parens]: always.
 * Require commas in a multi-line block, [comma-dangle]: "always-multiline".
 * Arrow functions everywhere, [prefer-arrow-callback].
 * Prefer spread instead of .apply where possible, [prefer-spread].
