@@ -1,5 +1,5 @@
 {
-  "name": "standard-babel-lint",
+  "name": "modern-standard",
   "description": "JavaScript Babel Standard Style",
   "version": "1.2.0",
   "author": {
@@ -7,10 +7,10 @@
     "name": "Kevin Grandon"
   },
   "bin": {
-    "standard-babel-lint": "./bin/cmd.js"
+    "modern-standard": "./bin/cmd.js"
   },
   "bugs": {
-    "url": "https://github.com/standard-babel-lint/standard-babel-lint/issues"
+    "url": "https://github.com/modern-standard/modern-standard/issues"
   },
   "dependencies": {
     "babel-eslint": "^4.1.5",
@@ -29,7 +29,7 @@
     "win-spawn": "^2.0.0",
     "xtend": "^4.0.0"
   },
-  "homepage": "https://github.com/standard-babel-lint/standard-babel-lint",
+  "homepage": "https://github.com/modern-standard/modern-standard",
   "keywords": [
     "JavaScript Babel Standard Style",
     "check",
@@ -60,7 +60,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/standard-babel-lint/standard-babel-lint.git"
+    "url": "git://github.com/modern-standard/modern-standard.git"
   },
   "scripts": {
     "test": "node ./bin/cmd.js"

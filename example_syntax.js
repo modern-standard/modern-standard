@@ -1,5 +1,5 @@
 /**
- * Example of valid syntax /w standard-babel-lint.
+ * Example of valid syntax /w modern-standard.
  */
 
 // Async function support.

@@ -1,8 +1,8 @@
-# JavaScript Babel Standard Style
+# JavaScript Modern Standard Style
 [![travis][travis-image]][travis-url]
 
-[travis-image]: https://travis-ci.org/standard-babel-lint/standard-babel-lint.svg?branch=master
-[travis-url]: https://travis-ci.org/standard-babel-lint/standard-babel-lint
+[travis-image]: https://travis-ci.org/modern-standard/modern-standard.svg?branch=master
+[travis-url]: https://travis-ci.org/modern-standard/modern-standard
 [npm-image]: https://img.shields.io/npm/v/standard.svg?style=flat
 [npm-url]: https://npmjs.org/package/standard
 [downloads-image]: https://img.shields.io/npm/dm/standard.svg?style=flat
@@ -27,7 +27,7 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 ## Install
 
 ```bash
-npm install standard-babel-lint
+npm install modern-standard
 ```
 
 ## Rule Differences from Standard
@@ -47,7 +47,7 @@ npm install standard-babel-lint
 
 ## Methodology Differences from Standard
 
-* We will freely update rules based on current best practices. Becuase of this we recommend that you lock down the current version of standard-babel-lint.
+* We will freely update rules based on current best practices. Becuase of this we recommend that you lock down the current version of modern-standard.
 * We are currently only targeting the latest javascript syntax, generally this code is transpiled by [babel].
 * We want to move faster and be more receptive to community issues and contributions.
 * Everything is under one organization, and all linting code is in a single repo. This makes it much easier for contributors.
