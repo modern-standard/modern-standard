@@ -24,12 +24,6 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 
 [standard linter]: https://github.com/feross/standard
 
-## Install
-
-```bash
-npm install modern-standard
-```
-
 ## Rule Differences from Standard
 
 * Always require parent for arrow functions, [arrow-parens]: always.
@@ -54,3 +48,27 @@ npm install modern-standard
 * This is an experiment and we're happy if standard adopts these rules or if this repository is forked.
 
 [babel]: http://babeljs.io/
+
+
+## Install
+
+```bash
+npm install modern-standard
+```
+
+## Text editor plugins
+
+First, install modern-standard. Then, install the appropriate plugin for your editor:
+
+#### [Sublime Text](https://www.sublimetext.com/)
+
+[SublimeLinter-contrib-modern-standard][SublimeLinter-contrib-modern-standard] is currently under construction and should be published in package control soon.
+
+[SublimeLinter-contrib-modern-standard]: https://github.com/modern-standard/ide-plugin-sublime
+
+
+#### [Atom](https://atom.io)
+
+[ide-plugin-atom][ide-plugin-atom] is currently under construction and should be published in apm soon.
+
+[ide-plugin-atom]: https://github.com/modern-standard/ide-plugin-atom
