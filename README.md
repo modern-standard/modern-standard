@@ -31,6 +31,7 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 * Arrow functions everywhere, [prefer-arrow-callback].
 * Prefer spread instead of .apply where possible, [prefer-spread].
 * Template strings, [prefer-template].
+* Require a yield statement in generators, [require-yield].
 
 [arrow-parens]: http://eslint.org/docs/rules/arrow-parens.html
 [comma-dangle]: http://eslint.org/docs/rules/comma-dangle.html
@@ -38,6 +39,7 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 [prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback.html
 [prefer-spread]: http://eslint.org/docs/rules/prefer-spread.html
 [prefer-template]: http://eslint.org/docs/rules/prefer-template.html
+[require-yield]: http://eslint.org/docs/rules/require-yield.html
 
 ## Methodology Differences from Standard
 

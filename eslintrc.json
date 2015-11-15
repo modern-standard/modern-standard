@@ -31,6 +31,7 @@
     "prefer-arrow-callback": 2,
     "prefer-spread": 2,
     "prefer-template": 2,
+    "require-yield": 2,
 
     "accessor-pairs": 2,
     "arrow-spacing": [2, { "before": true, "after": true }],
