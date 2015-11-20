@@ -1,7 +1,7 @@
 {
   "name": "modern-standard",
-  "description": "JavaScript Babel Standard Style",
-  "version": "1.4.0",
+  "description": "A linter based on standard, built with a modern ruleset.",
+  "version": "1.4.1",
   "author": {
     "email": "kevingrandon@yahoo.com",
     "name": "Kevin Grandon"
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/modern-standard/modern-standard",
   "keywords": [
-    "JavaScript Babel Standard Style",
+    "A linter based on standard, built with a modern ruleset.",
     "check",
     "checker",
     "code",
@@ -45,6 +45,8 @@
     "jscs",
     "jshint",
     "lint",
+    "linter",
+    "modern-standard",
     "policy",
     "quality",
     "simple",
