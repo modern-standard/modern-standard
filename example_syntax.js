@@ -4,7 +4,8 @@
 
 // Async function support.
 async function foo () {
-  console.log('Called into an async function.')
+  // Requires await
+  await console.log('Called into an async function.')
 }
 
 (async function() {
