@@ -71,6 +71,6 @@ First, install modern-standard. Then, install the appropriate plugin for your ed
 
 #### [Atom](https://atom.io)
 
-[ide-plugin-atom][ide-plugin-atom] is currently under construction and should be published in apm soon.
+[ide-plugin-atom][ide-plugin-atom] can be found here: https://atom.io/packages/modern-standard-ide-plugin-atom
 
 [ide-plugin-atom]: https://github.com/modern-standard/ide-plugin-atom
