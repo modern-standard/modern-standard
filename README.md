@@ -58,6 +58,33 @@ This is a linter for the future, based on the [standard linter]. It expects to b
 npm install modern-standard
 ```
 
+### Integrating modern-standard
+
+1. Add it to `package.json`
+
+  ```json
+  {
+    "name": "my-package",
+    "devDependencies": {
+      "modern-standard": "*"
+    },
+    "scripts": {
+      "test": "modern-standard && node my-tests.js"
+    }
+  }
+  ```
+
+2. Check style automatically when you run `npm test`
+
+  ```
+  $ npm test
+  Error: Use JavaScript Modern Standard Style
+    lib/torrent.js:950:11: Expected '===' and instead saw '=='.
+  ```
+
+3. Never give style feedback on a pull request again!
+
+
 ## Text editor plugins
 
 First, install modern-standard. Then, install the appropriate plugin for your editor:
