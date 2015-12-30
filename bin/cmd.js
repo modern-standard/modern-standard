@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env ./node_modules/.bin/babel-node
 
 var opts = require('../options.js')
 
