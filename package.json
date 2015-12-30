@@ -1,7 +1,7 @@
 {
   "name": "modern-standard",
   "description": "A linter based on standard, built with a modern ruleset.",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": {
     "email": "kevingrandon@yahoo.com",
     "name": "Kevin Grandon"
